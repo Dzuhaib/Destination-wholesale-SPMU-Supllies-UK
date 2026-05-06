@@ -5,12 +5,27 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { ArrowRight, ShoppingBag } from "lucide-react";
 
-export const featuredProducts = [
+export type Product = {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  originalPrice?: number;
+  image: string;
+  description: string;
+  badge?: string;
+  certs: string[];
+  rating: number;
+  reviews: number;
+};
+
+export const featuredProducts: Product[] = [
   {
     id: "revolax-deep",
     name: "Revolax Deep with Lidocaine",
     category: "Aesthetics",
     price: 34.99,
+    originalPrice: 45.00,
     image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=800",
     description: "Industry leading filler for deep-tissue enhancement and contouring.",
     badge: "Bestseller",
