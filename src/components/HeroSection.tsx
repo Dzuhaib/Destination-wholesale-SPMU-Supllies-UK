@@ -47,8 +47,8 @@ export default function HeroSection() {
   if (!mounted) return <div className="h-screen bg-white" />;
 
   return (
-    <section className="relative bg-white pt-32 pb-20">
-      <div className="container-custom py-10 md:py-20">
+    <section className="relative bg-white pt-32 pb-10">
+      <div className="container-custom">
         
         {/* Main Hero Container - Full Width again */}
         <div className="relative h-[600px] md:h-[750px] w-full rounded-sm overflow-hidden bg-[#171717] group">
@@ -67,9 +67,12 @@ export default function HeroSection() {
                 <div className="absolute inset-0 z-0">
                   <img 
                     src={slide.image} 
-                    className="h-full w-full object-cover transition-transform duration-[10000ms] ease-linear scale-110 active:scale-100"
+                    className="h-full w-full object-cover grayscale transition-transform duration-[10000ms] ease-linear scale-110 active:scale-100"
                     alt={slide.title} 
                   />
+                  {/* Theme Color Overlay */}
+                  <div className="absolute inset-0 bg-[#a6549e]/80 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-[#a6549e]/40" />
                 </div>
 
                 {/* Content Overlay */}
@@ -106,21 +109,21 @@ export default function HeroSection() {
             ))}
           </Swiper>
 
-          {/* Right Side Solid Categories Slider */}
-          <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-80 z-20 border-l border-gray-100 bg-white">
+          {/* Right Side Glassmorphism Categories Slider Overlay */}
+          <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-80 z-20 border-l border-white/20 bg-black/10 backdrop-blur-md">
              <div className="h-full flex flex-col pt-10">
                 <div className="px-10 mb-8 flex items-center justify-between">
-                  <span className="font-body text-[10px] tracking-[0.4em] uppercase text-[#171717] font-bold opacity-80">
+                  <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white font-bold opacity-80">
                     Disciplines
                   </span>
-                  <div className="w-8 h-px bg-[#a6549e]" />
+                  <div className="w-8 h-px bg-white/30" />
                 </div>
                 
                 <div className="flex-1 overflow-hidden">
                   <Swiper
                     modules={[Autoplay]}
                     direction="vertical"
-                    slidesPerView={3}
+                    slidesPerView={4}
                     spaceBetween={0}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                     loop={true}
@@ -130,16 +133,16 @@ export default function HeroSection() {
                       <SwiperSlide key={idx}>
                         <Link 
                           href={cat.href}
-                          className="group/cat flex items-center gap-6 px-10 h-full hover:bg-gray-50 transition-all duration-500 cursor-pointer border-b border-gray-50 last:border-0"
+                          className="group/cat flex items-center gap-2 px-6 h-full hover:bg-white/10 transition-all duration-500 cursor-pointer border-b border-white/10 last:border-0"
                         >
-                          <div className="w-14 h-14 rounded-full bg-[#fdf4fc] flex items-center justify-center shrink-0 group-hover/cat:scale-110 transition-transform duration-500">
-                            <cat.icon size={22} className="text-[#a6549e] transition-colors" />
+                          <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover/cat:bg-[#a6549e] group-hover/cat:scale-110 transition-transform duration-500">
+                            <cat.icon size={22} className="text-white group-hover/cat:text-white transition-colors" />
                           </div>
                           <div>
-                            <h4 className="font-display text-[16px] text-[#171717] font-medium tracking-wide mb-1 group-hover/cat:translate-x-2 group-hover/cat:text-[#a6549e] transition-all duration-500">
+                            <h4 className="font-display text-[16px] text-white font-medium tracking-wide mb-1 group-hover/cat:translate-x-2 transition-transform duration-500">
                               {cat.label}
                             </h4>
-                            <span className="font-body text-[8px] tracking-[0.2em] uppercase text-gray-400 font-bold group-hover/cat:text-[#171717] group-hover/cat:translate-x-2 transition-all duration-500 block">
+                            <span className="font-body text-[8px] tracking-[0.2em] uppercase text-white/50 font-bold group-hover/cat:text-white/80 group-hover/cat:translate-x-2 transition-all duration-500 block">
                               Explore
                             </span>
                           </div>
