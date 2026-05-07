@@ -105,9 +105,8 @@ export default function Header() {
         <div className="container-custom">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex flex-col leading-none group">
-              <span className="text-2xl font-semibold tracking-tight text-[#171717]">Destination</span>
-              <span className="text-[9px] tracking-[0.5em] uppercase text-[#a6549e] font-bold mt-1">Wholesale</span>
+            <Link href="/" className="flex items-center group">
+              <img src="/logo.webp" alt="Destination Wholesale" className="h-10 md:h-12 object-contain" />
             </Link>
 
             {/* Desktop Nav */}

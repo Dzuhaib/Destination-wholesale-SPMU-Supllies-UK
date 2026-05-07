@@ -10,7 +10,7 @@ export default function OriginStorySection() {
   }, []);
 
   return (
-    <section className="py-40 bg-white border-y border-gray-50">
+    <section className="py-20 lg:py-40 bg-white border-y border-gray-50">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className={`text-center mb-20 transition-all duration-1000 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
@@ -22,7 +22,7 @@ export default function OriginStorySection() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 md:gap-24">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-24">
             <div className={`space-y-8 transition-all duration-1000 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <p className="font-body text-[17px] text-[#171717] leading-relaxed font-semibold">
                 We are an independent family run business Founded in 2023. Our CEO has worked in the industry for more than 10 years, is post graduate qualified and currently training up to level 7 in aesthetics.

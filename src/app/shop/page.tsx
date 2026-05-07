@@ -103,7 +103,7 @@ export default function ShopPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Page header */}
-      <div className="bg-[#171717] py-32 relative overflow-hidden">
+      <div className="bg-[#171717] pt-48 pb-20 lg:pt-64 lg:pb-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover grayscale" alt="bg" />
         </div>
@@ -118,8 +118,8 @@ export default function ShopPage() {
         </div>
       </div>
 
-      <div className="container-custom py-24">
-        <div className="flex flex-col lg:flex-row gap-20">
+      <div className="container-custom py-12 lg:py-24">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           {/* Sidebar filters */}
           <aside className="hidden lg:block w-80 shrink-0">
             <div className="sticky top-32">
@@ -194,7 +194,7 @@ export default function ShopPage() {
             </div>
 
             {sorted.length === 0 && (
-              <div className="text-center py-40 border border-gray-50 rounded-sm">
+              <div className="text-center py-20 lg:py-40 border border-gray-50 rounded-sm">
                 <ShoppingBag size={64} className="text-gray-50 mx-auto mb-8" />
                 <h3 className="text-3xl text-[#171717] mb-4 font-display">No Results Found</h3>
                 <p className="font-body text-[15px] text-gray-400 mb-10 max-w-sm mx-auto leading-relaxed">Adjust your clinical filters to explore more professional products.</p>

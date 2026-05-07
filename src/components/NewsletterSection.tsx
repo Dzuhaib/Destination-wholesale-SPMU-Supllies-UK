@@ -13,7 +13,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="py-40 bg-gray-50">
+    <section className="py-20 lg:py-40 bg-gray-50">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           <span className="font-body text-[11px] tracking-[0.4em] uppercase text-[#a6549e] font-bold mb-8 block">

@@ -4,13 +4,12 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-gray-100 py-32">
+    <footer className="bg-white border-t border-gray-100 py-16 lg:py-32">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
           <div className="lg:col-span-1">
             <div className="mb-10">
-              <div className="text-3xl font-semibold text-[#171717] mb-1">Destination</div>
-              <div className="text-[10px] tracking-[0.4em] uppercase text-[#a6549e] font-bold">Wholesale</div>
+              <img src="/logo.webp" alt="Destination Wholesale" className="h-16 md:h-20 object-contain" />
             </div>
             <p className="font-body text-[14px] text-gray-400 leading-relaxed max-w-xs">
               UK&apos;s premier aesthetics supply. Sourcing excellence for the modern practitioner.
@@ -33,7 +32,7 @@ export default function Footer() {
           <div>
             <h4 className="font-body text-[11px] tracking-[0.3em] uppercase text-gray-400 font-bold mb-10">Information</h4>
             <ul className="space-y-4">
-              {["Our Story", "Verification", "Terms", "Privacy", "Shipping"].map((link) => (
+              {["Our Story", "Verification", "Terms", "Privacy", "Cookies", "Shipping"].map((link) => (
                 <li key={link}>
                   <Link href={`/${link.toLowerCase().replace(' ', '-')}`} className="font-body text-[13px] text-gray-500 hover:text-[#a6549e] transition-colors">
                     {link}

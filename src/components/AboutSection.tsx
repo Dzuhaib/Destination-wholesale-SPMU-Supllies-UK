@@ -12,9 +12,9 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section className="py-40 bg-white overflow-hidden">
+    <section className="py-20 lg:py-40 bg-white overflow-hidden">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-32 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-32 items-center">
           {/* Left: Refined Asymmetrical Image Composition */}
           <div className={`relative transition-all duration-1000 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm group">

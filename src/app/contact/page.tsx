@@ -23,7 +23,7 @@ export default function ContactPage() {
       {/* Main Content */}
       <section className="py-24">
         <div className="container-custom">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left: Contact Info */}
             <div className="space-y-16">
               <div>

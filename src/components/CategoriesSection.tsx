@@ -21,7 +21,7 @@ export default function CategoriesSection() {
   }, []);
 
   return (
-    <section className="py-40 bg-white border-t border-gray-50">
+    <section className="py-20 lg:py-40 bg-white border-t border-gray-50">
       <div className="container-custom">
         <div className="text-center mb-24">
           <span className="font-body text-[11px] tracking-[0.5em] uppercase text-[#a6549e] font-bold block mb-6">

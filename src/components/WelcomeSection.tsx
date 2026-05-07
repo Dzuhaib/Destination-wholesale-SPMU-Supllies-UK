@@ -10,10 +10,10 @@ export default function WelcomeSection() {
   }, []);
 
   return (
-    <section className="py-40 bg-white overflow-hidden border-b border-gray-50">
+    <section className="py-20 lg:py-40 bg-white overflow-hidden border-b border-gray-50">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className={`transition-all duration-1000 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
               <span className="font-body text-[11px] tracking-[0.5em] uppercase text-[#a6549e] font-bold block mb-8">
                 Introduction

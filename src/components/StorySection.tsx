@@ -37,7 +37,7 @@ export default function StorySection() {
   }, []);
 
   return (
-    <section className="py-40 bg-white">
+    <section className="py-20 lg:py-40 bg-white">
       <div className="container-custom">
         <div className="max-w-3xl mb-24">
           <span className="font-body text-[11px] tracking-[0.4em] uppercase text-[#a6549e] font-bold block mb-6">

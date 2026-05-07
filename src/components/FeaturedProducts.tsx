@@ -170,7 +170,7 @@ export default function FeaturedProducts() {
   }, []);
 
   return (
-    <section className="py-40 bg-white">
+    <section className="py-20 lg:py-40 bg-white">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12">
           <div className="max-w-2xl">
